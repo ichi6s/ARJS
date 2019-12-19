@@ -9,12 +9,11 @@
 <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">
     <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
     <a-assets>
-        <a-asset-item id="nihonbashiRT-obj" src="nihonbashi/nihonbashiRT.obj"></a-asset-item>
-        <a-asset-item id="nihonbashiRT-mtl" src="nihonbashi/nihonbashiRT.mtl"></a-asset-item>
-    </a-assets>
+        <a-asset-item id="nihonbashiGLB-obj" src="nihonbashi/NihonbashiGLB.glb"></a-asset-item>
+         </a-assets>
 　　　　　　　　<!-- こっからARの世界。マーカー上になにを展開するかを書く -->
     <a-marker preset="hiro">
-        <a-obj-model id="nihonbashi" src="#nihonbashiRT-obj" mtl="#nihonbashiRT-mtl" position="-2.5 0 0" scale="0.08 0.05 0.05" rotation="0 0 0"></a-obj-model>
+        <a-obj-model id="nihonbashi" src="#nihonbashiGLB-obj" position="-2.5 0 0" scale="0.08 0.05 0.05" rotation="0 0 0"></a-obj-model>
         <a-text value="STARTS NIHONBASHI BLD" position="0 2.6 0" align="center"></a-text>
     </a-marker>
     <!-- arなのでこんな感じでカメラが必要らしい。 -->
